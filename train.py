@@ -50,7 +50,7 @@ def get_arguments():
         help="Learning rate for the model.")
     parser.add_argument('--skip_validation', action='store_true',
     	help='Whether to skip validation in the training process?')
-    parser.add_argument('--gpu_id', type=int, default=3,
+    parser.add_argument('--gpu_id', type=int, default=0,
         help='Select the gpu_id to run the code on')
 
     return parser.parse_args()
